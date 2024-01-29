@@ -1,5 +1,90 @@
-run:
-fer
-ger
-fer
-BUILD SUCCESSFUL (total time: 10 seconds)
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sanchitmnck22;
+
+/**
+ *
+ * @author acer
+ */
+import java.util.Scanner;
+        
+public class SanchitMnck22 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+//        1.
+//        System.out.println("Hello Sanchit
+
+//        2.
+//          System.out.println(args[0]+" "+args[1]+" "+args[2]);
+
+ //4 & 3        
+//        int i,p;
+//        float j;
+//        String s;
+//        Scanner sc=new Scanner(System.in);
+//        i=sc.nextInt();
+//        p=sc.nextInt();
+//        j=sc.nextFloat();
+//        s=sc.next();
+//        
+//        System.out.println("Integer are"+" "+i+" "+"&"+" "+p);
+//        System.out.println("float is"+" "+j);
+//        System.out.println("String is"+" "+ s);
+//        
+//        int a=i+p;
+//        int m=i*p;
+//        int g=i-p;
+//        int d=i/p;
+//        System.out.println("Adittion = "+a);
+//        System.out.println("Multiplication = "+m);
+//        System.out.println("Substraction = "+g);
+//        System.out.println("Divison = "+d
+//
+
+
+/// ques 5.
+//        Scanner sc=new Scanner(System.in);
+//        double db;
+//        long l;
+//        db=sc.nextDouble();
+//        l=sc.nextLong();
+//        float f=(float)db;
+//        long k=(long)db;
+//        int i=(int)l;
+//        System.out.println("double value f = "+db+" is type casted in float = "+f);
+//        System.out.println("double value f = "+db+" is type casted in long = "+k);
+//        System.out.println("double value f = "+db+" is type casted in int = "+i);
+//        
+        
+/// ques 6   
+        Scanner sc=new Scanner(System.in);
+        //String s=sc.next();
+        String h=sc.nextLine();
+        String j=sc.next();
+        System.out.println(h);
+        
+        
+        
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+    }
+    
+}
+
