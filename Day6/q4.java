@@ -67,7 +67,7 @@ class Studentss {
     int Student_fee;
 
     Studentss() {
-        this("Yash",10,1010);        
+        this("Sanchit",10,1010);        
     }
 
     Studentss(String Student_name, int Student_roll, int Student_fee) {
