@@ -1,52 +1,65 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package day7;
-
-/**
- *
- * @author acer
- */
-
 import java.util.*;
-class Rectangle2{
-    int length;
-    int breadth;
-    Rectangle2(){
-        length=1;
-        breadth=1;
-    }
-    Rectangle2(int l,int b){
-        length=l;
-        breadth=b;
-    
-    }
-}  
-class Cuboid1 extends Rectangle2{
-    int height;
-    Cuboid1(){
-        super(10,20);
-        height=1;
-    }
-    Cuboid1(int h){ 
-        super(30,40);
-        height=h;
-    }
-    int volume(){
-        return this.length*this.breadth*height;
+class grandparent
+{
+    int a = 1;
+    grandparent()
+    {
+        System.out.println("In Grandparent Constructor" + a);
+    }        
+    void print()
+    {
+        this.a = 2*a;
+        System.out.println("In Grandparent" + a);
     }
 }
-public class q4 {
-     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        Cuboid1 obj1=new Cuboid1();
-        System.out.println("Volume :"+obj1.volume());
-        System.out.println("Enter the height :");
-        int h=sc.nextInt();
-        Cuboid1 obj2=new Cuboid1(h);
-        System.out.println("Volume :"+obj2.volume());
-        
+class parent extends grandparent
+{
+    int a = 5;
+    parent()
+    {
+        System.out.println("In Parent Constructor" + a);
+    }
+    void print()
+    {
+        this.a = 2*a;
+        System.out.println("In Parent" + a);
     }
 }
+class child extends parent
+{
+    int a = 10;
+    child()
+    {
+        super();
+        System.out.println("In Child Constructor" + a);
+    }
+    void print()
+    {
+        this.a = 100;
+        super.print();
+        System.out.println("In Child" + a);
+    }
+}
+class calling
+{
+    public static void main(String[] args)
+    {
+        child obj1 = new child();
+        obj1.print();
+        parent obj2 = new parent();
+        obj2.print();
+        grandparent obj3 = new grandparent();
+        obj3.print();
+    }
+}
+********************************************
+In Grandparent Constructor1
+In Parent Constructor5
+In Child Constructor10
+In Parent10
+In Child100
+In Grandparent Constructor1
+In Parent Constructor5
+In Parent10
+In Grandparent Constructor1
+In Grandparent2
