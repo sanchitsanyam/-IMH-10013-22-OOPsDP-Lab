@@ -16,7 +16,7 @@ class MyWrapper_Class{
         i=j;
     }
     public int intValue(){
-        return i+10;
+        return i;
     }
 }
 public class q6 {
